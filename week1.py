@@ -14,7 +14,7 @@ import random
 # helper functions
 
 def name_to_number(name):
-    # delete the follwing pass statement and fill in your code below
+    # delete the following pass statement and fill in your code below
     if(name=="rock"):
         number = 0
     elif(name=="Spock"):
@@ -33,7 +33,7 @@ def name_to_number(name):
 
 
 def number_to_name(number):
-    # delete the follwing pass statement and fill in your code below
+    # delete the following pass statement and fill in your code below
     if(number==0):
         name="rock"
     elif(number==1):
@@ -53,7 +53,7 @@ def number_to_name(number):
     
 
 def rpsls(player_choice): 
-    # delete the follwing pass statement and fill in your code below
+    # delete the following pass statement and fill in your code below
     
     # print a blank line to separate consecutive games
     print " "
@@ -77,13 +77,15 @@ def rpsls(player_choice):
     difference=(comp_number - player_number) % 5 
     
     # use if/elif/else to determine winner, print winner message
+	if(difference==0):
+		print "You have tied!"
     if(difference==1):
         print "Computer wins!"
     elif(difference==2):
         print "Computer wins!"
     elif(difference==3):
         print "Player wins!"
-    elif(difference==3):
+    elif(difference==4):
         print "Player wins!"
         
 # test your code - LEAVE THESE CALLS IN YOUR SUBMITTED CODE
